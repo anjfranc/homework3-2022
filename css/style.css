@@ -92,9 +92,9 @@ a.skip{
   position:absolute;
   
 } 
-a.skip:focus{
+/* a.skip:focus{
   position: relative;
-}
+} */
 
  
 a:focus{
@@ -170,10 +170,9 @@ grid-row: 3/4;
   }
 
 a.skip:focus{
-  /* text-align: left;
-  position:absolute; */
-  bottom:-20px;
-  left:0;
+  left:0; 
+  top:20px;
+  position: absolute;
 
 }
 .container{
