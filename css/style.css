@@ -27,7 +27,7 @@ h2{
 nav{
   background-color: #ddd;
   padding: 25px 10px;;    
-  text-align: left;   
+  text-align: left;  
 }
 
 nav a{
@@ -81,27 +81,28 @@ nav a{
 nav a:hover{
   text-decoration-line:underline;
   text-decoration-style:wavy;
-}  
-
-  a.skip{
+}        
+a.skip{ 
   background: white;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
+  left:-500px;  
   position:absolute;
-  left:-500px;
   
-
-  
+} 
+a.skip:focus{
+  position: relative;
 }
 
+ 
 a:focus{
 border-top: 2px solid yellow;
-outline: none;
+outline: none; 
 } 
 
-
+ 
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -179,11 +180,11 @@ a.skip:focus{
   grid-template-columns: 50px auto 500px auto 50px;
   grid-template-rows: 300px 300px 300px 300px;
 }
-.about .method .clients-image .contact-image{
-  grid-column: 3/span 2;
+.about, .method, .clients-image, .contact-image{
+  grid-column: 3 / span 2;
 
 }
-.clients .contact .about-image .method-image{
+.clients, .contact, .about-image, .method-image{
   grid-column: 2/ span 2;
 }
 }
