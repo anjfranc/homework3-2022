@@ -111,7 +111,7 @@ outline: none;
 }
 
 .intro{
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-color: #707070;
   min-height: 400px;
   background-attachment: fixed;
